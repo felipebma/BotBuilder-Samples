@@ -11,7 +11,7 @@ This bot has been created using [Bot Framework][1], it shows how to create a sim
 	```
 
 # To try this sample
-- In a terminal, navigate to `# $safeprojectname$`
+- In a terminal, navigate to `$safeprojectname$`
     ```bash
     # change into project folder
 	cd # $safeprojectname$
@@ -27,8 +27,8 @@ This bot has been created using [Bot Framework][1], it shows how to create a sim
 	B) Or from Visual Studio
 	- Launch Visual Studio
 	- File -> Open -> Project/Solution
-	- Navigate to `# $safeprojectname$` folder
-	- Select `# $safeprojectname$.csproj` file
+	- Navigate to `$safeprojectname$` folder
+	- Select `$safeprojectname$.csproj` file
 	- Press `F5` to run the project
 
 # Testing the bot using Bot Framework Emulator

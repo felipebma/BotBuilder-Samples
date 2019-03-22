@@ -1,7 +1,9 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
-    <Name>EchoBot</Name>
-    <Description>Bot Framework v4 Echo Bot Template.</Description>
+    <Name>Echo Bot (Bot Framework v4)</Name>
+    <Description>Echo Bot Template for Bot Framework v4.  A good template if you want a little more than "Hello World!".  Echo Bot simply "echos" back to the user anything the user says to the bot.
+More information about Echo Bot can be found at https://aka.ms/vsix_echobot
+    </Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>Bot Framework</ProjectSubType>
     <SortOrder>1000</SortOrder>
@@ -16,6 +18,10 @@
   </TemplateData>
   <TemplateContent>
     <Project File="EchoBot.csproj" ReplaceParameters="true">
+      <Folder Name="Bots" TargetFolderName="Bots">
+        <ProjectItem ReplaceParameters="true">EchoBot.cs</ProjectItem>
+      </Folder>
+
       <Folder Name="controllers" TargetFolderName="Controllers">
         <ProjectItem ReplaceParameters="true">BotController.cs</ProjectItem>
       </Folder>
@@ -29,8 +35,6 @@
       </Folder>
 
       <ProjectItem ReplaceParameters="true">ConfigurationCredentialProvider.cs</ProjectItem>
-
-      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.cs">EmptyBot.cs</ProjectItem>
 
       <ProjectItem ReplaceParameters="true">Program.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true">README.md</ProjectItem>
